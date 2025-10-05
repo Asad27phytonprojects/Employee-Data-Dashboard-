@@ -1,2 +1,37 @@
-# Employee Data Dashboard 
-Employee Data Dashboard 📊 is a dynamic and interactive web application built using Streamlit, Pandas, and Matplotlib, designed to help HR professionals, managers, or data enthusiasts explore and visualize employee data effortlessly. The dashboard provides a user-friendly interface where users can upload Excel or CSV files containing employee information and immediately gain insights through interactive visualizations and data summaries.  The application automatically detects key columns such as Salary, Department, Age, Experience, and Performance, making it highly flexible with different datasets. Upon uploading, the dashboard performs essential data cleaning steps, including filling missing salary values with the average, replacing missing department entries with "Unknown", and removing duplicate rows. It also calculates a bonus field, set as 10% of each employee’s salary, and classifies employees into experience levels—Junior, Mid, or Senior—based on their years of experience.
+# Employee Data Dashboard 📊
+
+A dynamic and interactive dashboard built with **Streamlit**, **Pandas**, and **Matplotlib** to visualize and explore employee data.  
+Upload your Excel or CSV file and get insights such as average salary per department, experience level distribution, age histogram, and salary vs performance analysis.
+
+---
+
+## Features
+
+- Upload CSV or Excel files for employee data.
+- Automatic detection of key columns: Salary, Department, Age, Experience, Performance.
+- Data cleaning:
+  - Fills missing salaries with the average
+  - Fills missing departments with "Unknown"
+  - Removes duplicate rows
+- Bonus calculation (10% of salary)
+- Experience level classification: Junior, Mid, Senior
+- Interactive sidebar filters:
+  - Filter by Department
+  - Filter by Experience Level
+- Visualizations:
+  - **Bar Chart:** Average Salary per Department
+  - **Pie Chart:** Experience Level Distribution
+  - **Histogram:** Age Distribution
+  - **Scatter Plot:** Salary vs Performance
+
+---
+
+## Requirements
+
+### Python
+- Python 3.8+
+- Pip (Python package installer)
+- Required Python libraries:
+
+```bash
+pip install streamlit pandas matplotlib openpyxl
